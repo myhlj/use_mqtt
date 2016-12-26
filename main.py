@@ -6,7 +6,7 @@ from use_mqtt import use_mqtt
 import multiprocessing,time
 #import urllib2
 import requests,os,io
-from PIL import Image
+#from PIL import Image
 
 def xlwt_process(queue,lock,use_xlwt,ip,port,dir_name):
     if not os.path.exists('./' + dir_name):
@@ -125,4 +125,3 @@ if __name__ == '__main__':
         use_mqtt.loop_forever()
     except KeyboardInterrupt,e:
         sys.exit()
-
