@@ -5,7 +5,7 @@ import sys,json
 from use_mqtt import use_mqtt
 import multiprocessing,time
 #import urllib2
-import requests,os,io
+import requests,os,io,socket
 #from PIL import Image
 
 def xlwt_process(queue,lock,use_xlwt,ip,port,dir_name):
